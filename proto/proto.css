@@ -1,0 +1,55 @@
+/* use box sizing everywhere */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#container {
+    background: #999999;
+    width: 800px;
+    height: 600px;
+}
+
+#controls {
+    position: fixed;
+    background: #99ff99;
+    width: 300px;
+    height: 600px;
+}
+
+#code {
+//    position: relative;
+}
+
+#compile {
+//    position: relative;
+}
+
+#edit {
+    background: #99ffff;
+    width: 300px;
+    height: 500px;
+//    position: relative;
+//    margin-top: 200px;
+}
+
+#game {
+    background: #9999ff;
+    width: 500px;
+    height: 300px;
+    margin-left: 300px;
+}
+
+#canvas {
+    width: 500px;
+    height: 300px;
+}
+
+#output {
+    background: #ff9999;
+    width: 500px;
+    height: 300px;
+    margin-left: 300px;
+    white-space: pre;
+}

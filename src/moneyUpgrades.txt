@@ -1,0 +1,12 @@
+var towerList[];
+var towerTypes["NormalTower"];
+
+var cash;
+var usedCash;
+
+function loadTowers(){
+	var code = mainCodeWindow.getValue();
+	console.log(code);
+
+
+}

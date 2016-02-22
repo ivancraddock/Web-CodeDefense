@@ -1,0 +1,363 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#side{
+	overflow-y: scroll;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 0px;
+	background-color: black;
+}
+
+#mainBody{
+	position: absolute;
+	left: 0px;
+	right:0px;
+	top: 0px;
+	bottom: 0px;
+	overflow: auto;
+	background-color: #efe5ff;
+}
+
+#helpBody{
+	position: absolute;
+	left: 0px;
+	right:0px;
+	top: 0px;
+	bottom: 0px;
+	overflow: auto;
+	background-color: pink;
+}
+
+
+h3{
+	height:50px;
+	width: 100%;
+	margin-top: 0px;
+	text-align: center;
+	background:#F0F0F0;
+	border:1px solid #CCC;
+}
+
+.editSection {
+	width: 400px;
+    background: #eeeeee;
+    border: 1px solid #000000;
+    font-family: monospace;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.code {
+    white-space: pre;
+}
+
+.editor {
+    margin-left: 25px;
+    width: 350px;
+    height: 200px;
+    border: 1px solid #cccccc;
+    background: #ffffff;
+}
+
+#advancedEdit {
+    display: none;
+}
+
+#fieldOne, #fieldTwo{
+	width: 255px;
+	color: white;
+}
+
+#inputOne, #inputTwo{
+	left: 1px;
+	font-size: 95%;
+	width: 99%;
+	white-space: pre-line;
+}
+
+#canvas {
+    width: 400px;
+    height: 500px;
+}
+
+#output{
+	white-space: pre-line;
+	border:1px solid #ccc;
+	overflow:auto;
+}
+
+.sideTextLine{
+	font-size: 95%;
+	resize: none;
+	width: 99%;
+	readonly:true;
+	height: 20px;
+	spellcheck:false;
+}
+
+.helpTextLine{
+	font-size: 95%;
+	resize: none;
+	width: 500px;
+	readonly:true;
+	height: 20px;
+	spellcheck:false;
+}
+
+.tripleTextLine{
+	font-size: 95%;
+	resize: none;
+	width: 99%;
+	readonly:true;
+	height: 50px;
+	spellcheck:false;
+}
+
+.fiveTextLine{
+	font-size: 95%;
+	resize: none;
+	width: 99%;
+	readonly:true;
+	height: 80px;
+	spellcheck:false;
+}
+
+.sideTextBox{
+	resize:none;
+	width: 99%;
+	readonly:true;
+	spellcheck:false;
+}
+
+.goodItem{
+	color: cyan;
+}
+
+.badItem{
+	color: red;
+}
+
+.otherItem{
+	color: yellow;
+}
+
+.spamItem{
+	color: grey;
+}
+
+.dodgerItem{
+	color:#1E90FF;
+}
+
+.ai {
+    display:none;
+}
+
+.errors {
+    display: none;
+    background: #ffff99;
+    border: 2px solid #ff9999;
+    white-space: pre;
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1278px){
+	#left{
+		position: relative;
+		float: left;
+		width: 400px;
+		margin-right: 30px;
+	}
+
+	#middle{
+		position: relative;
+		float: left;
+		width: 400px;
+		margin-right: 30px;
+	}
+
+	#right{
+		position: relative;
+		float: left;
+		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 1278px) and (min-width: 850px){
+	
+	#left{
+		position: relative;
+		float: left;
+		width: 400px;
+		margin-right: 30px;
+	}
+
+	#middle{
+		position: relative;
+		float: left;
+		width: 400px;
+	}
+
+	#right{
+		position: relative;
+		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 850px){
+	
+	#left{
+		position: relative;
+		width: 400px;
+	}
+
+	#middle{
+		position: relative;
+		width: 400px;
+	}
+
+	#right{
+		position: relative;
+		width: 400px;
+	}
+}
+
+@media only screen and (orientation: landscape) and (max-device-width: 849px){
+	#left{
+		clear: both;
+		display: block;
+		position: relative;
+		float: left;
+		width: 400px;
+		padding: 10px;
+	}
+
+	#middle{
+		position: relative;
+		float: left;
+		width: 400px;
+		padding: 10px;
+	}
+	
+	#right{
+		clear: both;
+		display: block;
+		position: relative;
+		font-size: 150%;
+		width: 400px;
+		padding: 10px;
+	}
+}
+
+@media only screen and (orientation: portrait) and (max-device-width: 849px){
+	#fieldOne{
+		font-size: 150%;
+	}
+	
+	#fieldTwo{
+		font-size: 150%;
+	}
+	
+	#button{
+		font-size: 150%;
+	}
+	
+	#soundsButton{
+		font-size: 150%;
+	}
+	
+	#compile{
+		font-size: 150%;
+	}
+	
+	#waveButton{
+		font-size: 150%;
+	}
+	
+	#pause{
+		font-size: 150%;
+	}
+	
+	#addTab{
+		font-size: 150%;
+	}
+	
+	#changeTabBack{
+		font-size: 150%;
+	}
+	
+	#changeTab{
+		font-size: 150%;
+	}
+	
+	#showAdvanced{
+		font-size: 150%;
+	}
+	
+	.editSection{
+		width: 800px;
+		font-size: 200%;
+	}
+	
+	table{
+		width: 800px;
+		font-size: 150%;
+	}
+	
+	#previousLevel{
+		font-size: 50%;
+		
+	}
+	#nextLevel{
+		font-size: 50%;
+	}
+	
+	#left{
+		clear: both;
+		display: block;
+		position: relative;
+		width: 820px;
+		padding: 10px;
+	}
+
+	#middle{
+		clear: both;
+		display: block;
+		position: relative;
+		width: 820px;
+		padding: 10px;
+	}
+	
+	#right{
+		clear: both;
+		display: block;
+		position: relative;
+		font-size: 150%;
+		width: 820px;
+		padding: 10px;
+	}
+	
+	#levelInfo{
+		font-size: 300%;
+	}
+	
+	#output{
+		font-size: 150%;
+	}
+	
+	/*400x500*/
+	#canvas{
+		width: 800px;
+		height: 1000px;
+	}
+	
+	help1 {
+    
+		background-color: #6495ed;
+	}
+
+}

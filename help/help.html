@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="../GAME.css" rel="stylesheet" type="text/css"/>
+</head>
+<div id="helpBody">
+<hr>
+<h2>Be sure to resize the game window so that the following 4 areas are visible:</h2>
+<img src='../images/screen_layout.JPG' width='600' border="5" alt='trojan virus'><br><br>
+<b>A: Mission</b><br>
+This column holds information regarding your current mission, and gameplay tips. It is advised that you read this.<br><br>
+<b>B: Terminal</b><br>
+This is where you enter your code to place and modify towers. Sometimes, demonstration code will be automatically added to the Terminal.<br><br>
+<b>C: Grid</b><br>
+This is the main display for the simulation. This will provide a graphical representation for how your defenses deal with different threats.<br><br>
+<b>D: Output</b><br>
+This is a text-based interpretation of the simulation. This window will also provide information about errors or other problems with your code.<br><br>
+<hr>
+<u><h1>Functions</h1></u>
+<h2>NormalTower constructor:</h2>
+<textarea readonly class='helpTextLine'>var T = new NormalTower(x,y)</textarea readonly><br>
+This function creates a new NormalTower (named "T" in this example) at the horizontal position 'x' and vertical position 'y' on the grid. The values for 'x' and 'y' must both be numbers (0-6 for 'x' and 0-8 for 'y').<br>
+More info about <b>constructors</b> can be found <a href='https://developer.mozilla.org/en-US/docs/Glossary/Constructor' target='_blank'>here,</a> and <a href='https://en.wikipedia.org/wiki/Constructor_%28object-oriented_programming%29' target='_blank'>here.</a><br>
+More info about the <b>'var'</b> keyword can be found <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var' target='_blank'>here.</a><br>
+More info about the <b>'new'</b> keyword can be found <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new' target='_blank'>here.</a><br>
+<h2>PulseTower constructor:</h2>
+<textarea readonly class='helpTextLine'>var P = new PulseTower(x,y)</textarea readonly><br>
+This function creates a new PulseTower (named "P" in this example) at the horizontal position 'x' and vertical position 'y' on the grid. The values for 'x' and 'y' must both be numbers (0-6 for 'x' and 0-8 for 'y').<br>
+<h2>SlowTower constructor:</h2>
+<textarea readonly class='helpTextLine'>var S = new SlowTower(x,y)</textarea readonly><br>
+This function creates a new SlowTower (named "S" in this example) at the horizontal position 'x' and vertical position 'y' on the grid. The values for 'x' and 'y' must both be numbers (0-6 for 'x' and 0-8 for 'y').<br>
+
+<h2>upgrade() function:</h2>
+<textarea readonly class='helpTextLine'>T.upgrade()</textarea readonly><br>
+This function improves the attributes of a tower (named "T" in this example). When used without any arguments, it will improve a tower's reloading speed.<br>
+This function can be used with the arguments "damage" or "range" to improve those attributes. Single- or double-quotes must be used around the argument, for example:<br>
+<textarea readonly class='helpTextLine'>T.upgrade("damage")</textarea readonly><br>
+<textarea readonly class='helpTextLine'>T.upgrade('range')</textarea readonly><br>
+<h2>setAI() function:</h2>
+<textarea readonly class='helpTextLine'>T.setAI()</textarea readonly><br>
+This function adjusts the targeting behevior for a tower(named "T" in this example). By default, tower's will attack the farthest available enemy.<br>
+When used without any arguments, it will modify a tower so that it targets the strongest available target (in terms of overall damage resistance).<br>
+This function can also be given another function as an argument, in order to program more complex AI.<br>
+More info about the <b>'functions'</b>  can be found <a href='http://www.w3schools.com/js/js_functions.asp' target='_blank'>here.</a><br>
+
+<hr>
+<u><h1>Cash Prices</h1></u>
+
+<table border="1" style="width:700px">
+  <tr>
+    <td></td>
+    <td>Construction</td>		
+    <td>First upgrade</td>
+	<td>Second upgrade</td>
+  </tr>
+  <tr>
+    <td>NormalTower</td>
+    <td>$0</td>		
+    <td>$1</td>
+    <td>$2</td>
+  </tr>
+  <tr>
+    <td>PulseTower</td>
+    <td>$2</td>		
+    <td>$2</td>
+    <td>$4</td>
+  </tr>
+  <tr>
+    <td>SlowTower</td>
+    <td>$0</td>		
+    <td>$2</td>
+    <td>$4</td>
+  </tr>
+</table>
+<hr><h1><u>Enemies</h1></u>
+<h2>Normal Virus:</h2><img src='../images/normalGIF.gif' alt='normalcreep'><br>Often, these are referred to as just 'viruses'. These are the most basic enemy type, and the easiest to destroy. <span class = 'badItem'>All viruses have a threat level of 1</span><br>
+<h2>Overclocked Virus:</h2><img src='../images/overclocked.gif' alt='overclocked' height='140'><br>These viruses require several hits to destroy, and they will accelerate every time they are attacked. <span class = 'badItem'>All viruses have a threat level of 1</span><br>
+<h2>Spam:</h2><img src='../images/spam.gif' alt='spam'><br>These are not technically a threat. They are sometimes released at the same time as viruses to overwhelm your defenses. <span class = 'spamItem'>Spam has a threat level of 0</span><br>
+<h2>Trojan Virus:</h2><img src='../images/trojan.gif' alt='trojan'><br>These viruses split into several smaller and faster viruses after taking enough damage. <span class = 'badItem'>All viruses have a threat level of 1</span><br>
+<h2>Packets:</h2><img src='../images/5packet.gif' alt='packets.gif'><br>These are regular files that are part of the system and <b>must not be destroyed</b>. <span class = 'dodgerItem'>Packets have a threat level of -1, since they are part of the system</span><br>
+<br><br>
+</div>
+</body>
+</html>

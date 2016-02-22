@@ -1,0 +1,503 @@
+Use the code below if you are stuck on a particular level or wave :)<br><br>
+
+-------------<br>
+LEVEL 1<br>
+-------------<br><br>
+
+1-1<br><br>
+
+new NormalTower(1,2)<br><br>
+
+1-2<br><br>
+
+new NormalTower(1,2)<br>
+new NormalTower(5,5)<br><br>
+
+1-3<br><br>
+
+new NormalTower(1,2)<br>
+new NormalTower(5,5)<br>
+new NormalTower(2,4)<br><br>
+
+1-4<br><br>
+
+new NormalTower(1,2)<br>
+new NormalTower(5,5)<br>
+new NormalTower(2,4)<br>
+new NormalTower(4,4)<br><br>
+
+-------------<br>
+LEVEL 2<br>
+-------------<br><br>
+
+2-1<br><br>
+
+var Julia = new NormalTower(4,2)<br>
+var _002x = new NormalTower(5,2)<br><br>
+
+2-2<br><br>
+
+var Julia = new NormalTower(4,2)<br>
+var _002x = new NormalTower(5,2)<br>
+var temp = new NormalTower(3,2)<br><br>
+
+2-3<br><br>
+
+var Julia = new NormalTower(4,2)<br>
+var _002x = new NormalTower(5,2)<br>
+Julia.upgrade()<br><br>
+
+2-4<br><br>
+
+var Julia = new NormalTower(4,2)<br>
+var _002x = new NormalTower(5,2)<br>
+Julia.upgrade()<br>
+_002x.upgrade()<br>
+var temp = new NormalTower(2,2)<br>
+temp.upgrade()<br><br>
+
+2-5<br><br>
+
+var Julia = new NormalTower(4,2)<br>
+var _002x = new NormalTower(5,2)<br>
+Julia.upgrade()<br>
+_002x.upgrade()<br>
+var temp = new NormalTower(2,2)<br>
+temp.upgrade()<br>
+var temp2 = new NormalTower(1,2)<br>
+temp2.upgrade()<br><br>
+
+-------------<br>
+LEVEL 3<br>
+-------------<br><br>
+
+3-1<br><br>
+
+var Julia = new NormalTower(1,6)<br>
+Julia.upgrade('range')<br><br>
+
+3-2<br><br>
+
+var Julia = new NormalTower(1,6)<br>
+Julia.upgrade('damage')<br><br>
+
+3-3<br><br>
+
+var Julia = new NormalTower(1,6)<br>
+Julia.upgrade('damage')<br>
+Julia.upgrade('damage')<br>
+var temp2 = new NormalTower(3,2)<br><br>
+
+3-4<br><br>
+
+var Julia = new NormalTower(1,6)<br>
+Julia.upgrade('damage')<br>
+Julia.upgrade('range')<br>
+var temp2 = new NormalTower(3,2)<br>
+temp2.upgrade('damage')<br>
+var temp3 = new NormalTower(3,5)<br><br>
+
+-------------<br>
+LEVEL 4<br>
+-------------<br><br>
+
+4-1<br><br>
+
+var Bob = new NormalTower(3,4)<br><br>
+
+4-2<br><br>
+
+var Bob = new NormalTower(3,4)<br>
+Bob.upgrade()<br>
+Bob.setAI()<br><br>
+
+4-3<br><br>
+
+var Bob = new NormalTower(3,4)<br>
+Bob.upgrade()<br>
+Bob.upgrade('damage')<br>
+Bob.setAI()<br><br>
+
+4-4<br><br>
+
+var Bob = new NormalTower(3,4)<br>
+Bob.upgrade('damage')<br>
+Bob.setAI()<br>
+var t2 = new NormalTower(3,2)<br>
+t2.upgrade('damage')<br>
+t2.setAI()<br>
+var t4 = new NormalTower(3,6)<br>
+t4.upgrade('damage')<br>
+t4.setAI()<br>
+var t5 = new NormalTower(2,7)<br>
+t5.upgrade('damage')<br>
+t5.setAI()<br><br>
+
+-------------<br>
+LEVEL 5<br>
+-------------<br><br>
+
+5-1<br><br>
+
+var p1 = new PulseTower<br><br>
+
+5-2<br><br>
+
+var p1 = new PulseTower(5,3)<br>
+p1.upgrade()<br>
+var t1 = new NormalTower(2,2)<br>
+var t2 = new NormalTower(5,5)<br>
+var t3 = new NormalTower(3,4)<br><br>
+
+5-3<br><br>
+
+var p1 = new PulseTower(5,3)<br>
+var p2 = new PulseTower(2,2)<br>
+p1.upgrade()<br>
+var t1 = new NormalTower(2,6)<br>
+var t2 = new NormalTower(5,5)<br>
+var t3 = new NormalTower(3,4)<br><br>
+
+5-4<br><br>
+
+var p1 = new PulseTower(5,3)<br>
+var p2 = new PulseTower(2,2)<br>
+p1.upgrade()<br>
+var t1 = new NormalTower(2,6)<br>
+var t2 = new NormalTower(5,5)<br>
+t2.upgrade('range')<br>
+var t3 = new NormalTower(3,4)<br>
+var t4 = new NormalTower(2,7)<br><br>
+
+-------------<br>
+LEVEL 6<br>
+-------------<br><br>
+
+6-1<br><br>
+
+for (var i = 1 ; i < 6 ; i++){<br>
+	var temp = new NormalTower(i,1)<br>
+}<br><br>
+
+6-2<br><br>
+
+for (var i = 1 ; i < 6 ; i++){<br>
+	var temp = new NormalTower(i,1)<br>
+}<br><br>
+
+6-3<br><br>
+
+for (var i = 1 ; i < 6 ; i++){<br>
+	var temp = new NormalTower(i,1)<br>
+	temp.setAI()<br>
+}<br><br>
+
+6-4<br><br>
+
+for (var i = 1 ; i < 6 ; i++){<br>
+	var temp = new NormalTower(i,1)<br>
+	temp.setAI()<br>
+	temp.upgrade('damage')<br>
+	var temp2 = new NormalTower(i,5)<br>
+	temp2.setAI()<br>
+}<br>
+<br><br>
+
+-------------<br>
+LEVEL 7<br>
+-------------<br><br>
+
+7-1<br><br>
+
+for (var i = 0 ; i < 5 ; i++){<br>
+	var temp = new NormalTower(i,i)<br>
+}<br><br>
+
+7-2<br><br>
+
+for (var i = 0 ; i < 5 ; i++){<br>
+	var temp = new NormalTower(i,i)<br>
+	var temp2 = new NormalTower(i+2, i)<br>
+}<br>
+var temp3 = new NormalTower(3,7)<br>
+temp3.upgrade()<br><br>
+
+7-3<br><br>
+
+for (var i = 0 ; i < 5 ; i++){<br>
+	var temp = new NormalTower(i,i)<br>
+    temp.upgrade('damage')<br>
+    temp.setAI()<br>
+	var temp2 = new NormalTower(i+2, i)<br>
+}<br>
+var temp3 = new NormalTower(3,7)<br>
+var temp4 = new NormalTower(2,6)<br><br>
+
+7-4<br><br>
+
+for (var i = 0 ; i < 5 ; i++){<br>
+	var temp = new NormalTower(i,i)<br>
+	var temp2 = new NormalTower(i+2,8-i)<br>
+}<br>
+var p1 = new PulseTower(3,4)<br>
+p1.upgrade('damage')<br>
+for (var i = 0; i < 4; i++){<br>
+	var temp4 = new NormalTower(i, 8-i)<br>
+    temp4.upgrade('damage')<br>
+    var temp5 = new NormalTower(i+2, i)<br>
+}<br><br>
+
+-------------<br>
+LEVEL 8<br>
+-------------<br><br>
+
+8-1<br><br>
+
+for (var i = 0 ; i < 6 ; i++){<br>
+	var temp = new SlowTower(i,6-i)<br>
+}<br>
+var temp2 = new NormalTower(5,7)<br><br>
+
+8-2<br><br>
+
+for (var i = 0 ; i < 6 ; i++){<br>
+	var temp = new SlowTower(i,6-i)<br>
+    temp.setAI()<br>
+}<br>
+for (var i = 0 ; i < 4 ; i++){<br>
+	var temp2 = new NormalTower(i+1, 3-i)<br>
+    temp2.setAI()<br>
+}<br><br>
+
+8-3<br><br>
+
+for (var i = 0 ; i < 6 ; i++){<br>
+	var temp = new SlowTower(i,6-i)<br>
+    temp.setAI()<br>
+}<br>
+for (var i = 0 ; i < 4 ; i++){<br>
+	var temp2 = new NormalTower(i+1, 3-i)<br>
+    temp2.setAI()<br>
+}<br>
+var temp4 = new PulseTower(1,1)<br>
+temp4.upgrade('damage')<br><br>
+
+8-4<br><br>
+
+for (var i = 0 ; i < 6 ; i++){<br>
+	var temp = new SlowTower(i,6-i)<br>
+    temp.setAI()<br>
+}<br>
+for (var i = 0 ; i < 4 ; i++){<br>
+	var temp2 = new NormalTower(i+1, 3-i)<br>
+    temp2.setAI()<br>
+}<br>
+var temp4 = new PulseTower(1,1)<br>
+temp4.upgrade('damage')<br>
+for( var i = 0; i < 3 ; i++){<br>
+	var temp5 = new NormalTower(3+i,4+i)<br>
+    var temp6 = new NormalTower(3+i,5+i)<br>
+    temp5.setAI()<br>
+    temp6.setAI()<br>
+}<br><br>
+
+-------------<br>
+LEVEL 9<br>
+-------------<br><br>
+
+9-1<br><br>
+
+function F(a){<br>
+	var temp = new NormalTower(a,a)<br>
+	temp.setAI()<br>
+}<br>
+F(5)<br>
+F(4)<br>
+F(3)<br>
+F(2)<br><br>
+
+9-2<br><br>
+
+function F(a){<br>
+	var temp = new NormalTower(a,a)<br>
+	temp.setAI()<br>
+}<br>
+F(5)<br>
+F(4)<br>
+F(3)<br>
+F(2)<br>
+F(1)<br>
+F(0)<br><br>
+
+9-3<br><br>
+
+function F(a,b){<br>
+	var temp = new NormalTower(a,b)<br>
+	temp.setAI()<br>
+	temp.upgrade('damage')<br>
+}<br>
+F(5,7)<br>
+F(5,6)<br>
+F(5,5)<br>
+F(3,4)<br>
+F(2,3)<br><br>
+
+9-4<br><br>
+
+function F(a,b,c){<br>
+	for(var i=0;i &lt c;i++){<br>
+		var temp = new NormalTower(a+i,b+i)<br>
+		temp.setAI()<br>
+		temp.upgrade('range')<br>
+	}<br>
+}<br>
+F(0,1,6)<br>
+F(0,0,6)<br>
+F(0,2,6)<br><br>
+
+9-5<br><br>
+
+function F(a,b,c){<br>
+	for(var i=0;i &lt c;i++){<br>
+		var temp = new NormalTower(a+i,b+i)<br>
+		temp.setAI()<br>
+		temp.upgrade('damage')<br>
+	}<br>
+}<br>
+F(0,1,6)<br>
+F(0,0,6)<br>
+F(0,2,6)<br>
+F(2,0,5)<br>
+F(1,5,4)<br><br>
+
+-------------<br>
+LEVEL 10<br>
+-------------<br><br>
+
+10-1<br><br>
+
+function customAI(target){}<br>
+for(var i = 0; i < 5; i++){<br>
+	var temp = new NormalTower(1,i)<br>
+	temp.setAI(customAI)<br>
+}<br><br>
+
+10-2<br><br>
+
+function customAI(target){<br>
+	return target<br>
+}<br>
+for(var i = 0; i < 5; i++){<br>
+	var temp = new NormalTower(1,i)<br>
+	temp.setAI(customAI)<br>
+}<br><br>
+
+10-3<br><br>
+
+function customAI(target){<br>
+	return target[0]<br>
+}<br>
+for(var i = 0; i < 5; i++){<br>
+	var temp = new NormalTower(1,i)<br>
+	temp.setAI(customAI)<br>
+}<br><br>
+
+10-4<br><br>
+
+function customAI(target){<br>
+	return target[1]<br>
+}<br>
+for(var i = 0; i < 5; i++){<br>
+	var temp = new NormalTower(1,i)<br>
+	temp.setAI(customAI)<br>
+}<br><br>
+
+10-5<br><br>
+
+function customAI(target){<br>
+	return target[2]<br>
+}<br>
+for(var i = 0; i < 5; i++){<br>
+	var temp = new NormalTower(1,i)<br>
+	temp.setAI(customAI)<br>
+}<br><br>
+
+-------------<br>
+LEVEL 11<br>
+-------------<br><br>
+
+11-1<br><br>
+
+function customAI(target){<br>
+	if(target[0].threat == 0){<br>
+		return target[0]<br>
+	}<br>
+}<br>
+for(var i = 0; i < 5; i++){<br>
+	var temp = new NormalTower(2,i*2)<br>
+	temp.setAI(customAI)<br>
+}<br><br>
+
+11-2<br><br>
+
+function customAI(target){<br>
+	if(target[0].threat == 1){<br>
+		return target[0]<br>
+	}<br>
+}<br>
+for(var i = 0; i < 5; i++){<br>
+	var temp = new NormalTower(2,i*2)<br>
+	temp.setAI(customAI)<br>
+}<br><br>
+
+11-3<br><br>
+
+function customAI(target){<br>
+	for(var i=0;i &lt target.length;i++){<br>
+		if(target[i].threat == 0){<br>
+			return target[i]<br>
+		}<br>
+	}<br>
+}<br>
+for(var i = 0; i < 5; i++){<br>
+	var temp = new NormalTower(2,i*2)<br>
+	temp.setAI(customAI)<br>
+}<br><br>
+
+11-4<br><br>
+
+function customAI(target){<br>
+	for(var i=0;i &lt target.length;i++){<br>
+		if(target[i].threat == 1){<br>
+			return target[i]<br>
+		}<br>
+	}<br>
+}<br>
+for(var i = 0; i < 5; i++){<br>
+	var temp = new NormalTower(2,i*2)<br>
+	temp.setAI(customAI)<br>
+}<br><br>
+
+11-5<br><br>
+
+function customAI(target){<br>
+	for(var i=0;i &lt target.length;i++){<br>
+		if(target[i].threat == 1){<br>
+			return target[i]<br>
+		}<br>
+	}<br>
+}<br>
+for(var i = 0; i < 5; i++){<br>
+	var temp = new NormalTower(2,i*2)<br>
+	temp.setAI(customAI)<br>
+    temp.upgrade('damage')<br>
+	var temp2 = new NormalTower(4,i*2)<br>
+	temp2.setAI(customAI)<br>
+    temp2.upgrade('damage')<br>
+}<br>
+for(var i = 0; i < 9; i++){<br>
+	var temp3 = new NormalTower(0,i)<br>
+    temp3.setAI(customAI)<br>
+    var temp4 = new NormalTower(6,i)<br>
+    temp4.setAI(customAI)<br>
+}<br><br>

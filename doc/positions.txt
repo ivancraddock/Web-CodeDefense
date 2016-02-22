@@ -1,0 +1,11 @@
+Positions of game elements need to be independent of pixels positions. This will simplify both rendering code and game update code. Game elements are positioned using a scale of 1.0 (game position) == 1 cell (rendering). 1 rendering cell is driven by the variable CELL_SIZE.
+
+Example:
+// Creep is within cell (1, 0)
+CELL_SIZE = 25; // pixels
+// game positions (in game units)
+creepX = 1.5;
+creepY = 0.5;
+// rendering positions (in pixels)
+creepRenderX = 37.5; // creepX * CELL_SIZE
+creepRenderY = 12.5; // creepY * CELL_SIZE

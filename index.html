@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<title>Code Defense</title>
+	<link href="GAME.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="lib/codemirror/show-hint.css">
+	<link rel="stylesheet" href="lib/codemirror/lib/codemirror.css">
+	
+	<script src="lib/jquery-2.1.3.js" type="text/javascript"></script>
+	
+	<script src="lib/codemirror/lib/codemirror.js"></script>
+	<script src="lib/codemirror/show-hint.js"></script>
+	<script src="lib/codemirror/javascript-hint.js"></script>
+	<script src="lib/codemirror/mode/javascript/javascript.js"></script>
+	
+	<script src="src/ai.js"></script>
+	<script src="src/codeSection.js"></script>
+	<script src="src/creeps.js"></script>
+	<script src="src/data.js"></script>
+	<script src="src/levelData.js"></script>
+
+	<script src="src/events.js"></script>
+	<script src="src/gameLogic.js"></script>
+	<script src="src/main.js"></script>
+	<script src="src/misc.js"></script>
+	<script src="src/projectiles.js"></script>
+	<script src="src/rendering.js"></script>
+	<script src="src/ResourceHandling.js"></script>
+	<script src="src/towers.js"></script>
+	<script src="src/UserInterface.js"></script>
+  </head>
+  <meta name="p:domain_verify" content="7d0a7832427a22b96eaef862ece695f1"/>
+  <body>
+	  <div id="side">
+		  <fieldset id="fieldOne">
+			  <div id="inputOne"></div>
+		  </fieldset>
+		  <fieldset id="fieldTwo">
+			  <div id="inputTwo"></div>
+		  </fieldset>
+	  </div>
+	  <div id="mainBody">
+		  <h3><img src='./images/hhh.jpg' height='1'>CODE DEFENSE (<span class='badItem'>Version 0.5</span>) - If this website looks jangled, try zooming in or out<br>This website only works with Firefox and Chrome (sorry IE/Safari)</h3>
+		  <div id="left">
+			  <button id="button">Mission</button>
+			  <button id="soundsButton">Sounds</button>
+			  <button id="helpButton">Help</button>
+  			  <button id="answersButton">Answers</button>
+			<br/><span>-------------------------</span>
+			<div id="controls">
+		  		 <button id="waveButton">Start Wave</button>
+				 <br/>
+<!--
+				 <button id="addTab">Add Tab</button>
+		  	   	 <br/>
+				 <button id="changeTabBack">Change Tab Backward</button>
+				 <button id="changeTab">Change Tab Forward</button>
+				 
+		  		 <button id="showAdvanced">Show 		 		 Advanced</button>
+-->
+			</div>
+			<!-- error messages -->
+			<!-- TODO add close button -->
+			<!-- main editor -->
+			<div id="mainEdit" class="editSection">
+					  <div class="code"><b>TERMINAL</b> - Enter code below<br></div>
+					 <textarea id="mainCode" class="editor" ></textarea>
+					 </div>
+			    <!-- advanced editor -->
+			  <div id="advancedEdit" class="editSection">
+			       	 <div class="ai">towerOneAI</div>
+			       	 <div class="code"></div>
+			       	 <textarea id="advancedCode" class="editor"></textarea>
+			  </div>
+		  </div>
+		  <div id="middle">
+				<div id="levelInfo">
+					<button id="previousLevel">Previous Level</button>
+					<span id="curLevel">Current Level: 0</span>
+					<button id="nextLevel">Next Level</button>
+				</div>
+				<div id="stats">
+					<table border="1">
+						<tr><th>WAVE</th><th>WAVE 	TIME</th><th>LINES</th><th>CASH</th><th>ENEMIES</th></tr>
+			  		  <tr><td><span id="waveCount">2</span></td>
+			  			<td><span id="waveTime">0</span></td>
+			  		  <td><span id="resourceAvailMain" 	class="resource"></span>/<span id="resourceTotalMain" 	class="resource"></span></td>
+			  		<td><span id="cashTotal"></span></td>
+			  <td><span id="creepCount"></span>/<span 	id="creepTotal"></span></td></tr>
+			  	</table>
+				</div>
+				<div id="game">
+			  	  <canvas id="canvas" width="400" height="500"></canvas>
+	  			</div>
+		  </div>
+		  <div id="right">
+			  <fieldset>
+			  	<div id="errors" class="errors"></div>
+
+					<legend>Output</legend>
+					<div id="output"><div id="errors" class="errors"></div>
+				  
+				</div>
+			  </fieldset>
+			    Follow us on  <a href='https://www.facebook.com/codedefense.org/' target='_blank'>Facebook</a>, <a href='https://www.pinterest.com/codedefense/' target='_blank'>Pinterest</a>, and <a href='https://www.kickstarter.com/projects/932443867/code-defense' target='_blank'>Kickstarter</a>!
+		  </div>
+	  </div>
+  </body>
+ </html>

@@ -1,0 +1,27 @@
+THE COUNT VARIABLE FROM A FOR LOOP CAN ALSO BE USED IN MORE COMPLEX WAYS.
+
+If COUNT is used as an argument for both of a towers X and Y ARGUMENTS, the towers will be placed diagonally.
+
+This next wave contains only SPAM, there is no immediate threat.
+
+---------------------------------
+THE CODE IN THE TERMINAL WILL CREATE 6 NORMALTOWERS, PLACED DIAGONALLY FROM POSITION (0,0) to POSITION (5,5).
+
+YOU MAY MODIFY THE CODE. PRESS START WAVE TO BEGIN.
+
+************************************
+
+A single FOR LOOP can be used to place multiple rows of towers. If a FOR LOOP contains multiple constructors, each CONSTRUCTOR will create a new TOWER for every iteration of the FOR LOOP.
+
+Rows of towers created this way typically run parallel to each other. Basic ADDITOIN and SUBTRACTION can be used on the 'i' variable to shift an entire row of towers to a new location.
+
+----------------------------------
+
+The code has been modified to add a second row of towers. THE FIRST ROW WILL RUN FROM (0,0) to (4,4). THE SECOND ROW WILL RUN FROM (2,0) to (6,4).
+
+PRESS START WAVE TO BEGIN
+
+
+
+
+**********************************
